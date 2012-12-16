@@ -1,0 +1,17 @@
+<package>
+  <description brief="sub_vel">
+
+     sub_vel
+
+  </description>
+  <author>nirmitim</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/sub_vel</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="cereal_port"/>
+  <depend package="std_msgs"/>
+</package>
+
+
