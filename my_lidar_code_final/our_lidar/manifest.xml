@@ -1,0 +1,16 @@
+<package>
+  <description brief="our_lidar">
+
+     our_lidar
+
+  </description>
+  <author>panx</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/our_lidar</url>
+  <depend package="wii_driver"/>
+  <depend package="sub_vel"/>
+  <depend package="hokuyo_node"/>
+</package>
+
+
