@@ -1,0 +1,16 @@
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/clean-test-results.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/odom_pub.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/rosbuild_precompile.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/rospack_genmsg.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/rospack_genmsg_libexe.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/rospack_gensrv.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/test.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/test-future.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/test-results.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/test-results-run.dir
+/home/nirmiti/ros/code/odom_pub/build/CMakeFiles/tests.dir
