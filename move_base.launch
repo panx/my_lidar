@@ -1,0 +1,24 @@
+<launch>
+  <master auto="start"/>
+  <node name="odom_pub" pkg="odom_pub" type="odom_pub"/>
+  <node name="robot_setup_tf" pkg="robot_setup_tf" type="robot_setup_tf"/>
+  <node pkg="map_server" type="map_server" name="map_server" args="/home/nirmiti/map.yaml 0.050000"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find move_base)/launch/move_base_launch.vcg"/>
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom_broadcaster" args="0 0 0 0 0 0 map odom 50" />  
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link base_laser 50" />
+ 
+
+ 
+  <include file="$(find amcl)/examples/amcl_omni.launch" />
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find move_base)/launch/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find move_base)/launch/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find move_base)/launch/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find move_base)/launch/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find move_base)/launch/base_local_planner_params.yaml" command="load" />
+    <param name="recovery_behavior_enabled" value="false"/>
+    <param name="controller_frequency" value="18"/>
+  </node>
+  <node name="simple_navigation_goals" pkg="simple_goal" type="simple_navigation_goals"/>
+</launch>

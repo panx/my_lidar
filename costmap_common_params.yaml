@@ -1,0 +1,11 @@
+obstacle_range: 3
+raytrace_range: 4
+footprint: [[0.095,0.18], [-0.095, 0.18],[-0.095,-0.18],[0.095, 0.18]]
+#robot_radius: ir_of_robot
+inflation_radius: 0.55
+
+transform_tolerance: 2.0
+map_type: costmap
+observation_sources: hokuyo_node
+
+laser_scan_sensor: {sensor_frame: laser_link, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
